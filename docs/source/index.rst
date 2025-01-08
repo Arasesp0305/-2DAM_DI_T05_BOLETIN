@@ -6,21 +6,13 @@
 sphinx-tutorial documentation
 =============================
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
+Índice General
+--------------
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contenido:
+   :caption: 1. Configuración Inicial del Proyecto
+   :numbered:
 
-   configuracion_inicial/001.env.md
-   configuracion_inicial/002.instalacion_librerias.md
-
-Indices y Tablas
-================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   configuracion_inicial/001.env
+   configuracion_inicial/002.instalacion_librerias

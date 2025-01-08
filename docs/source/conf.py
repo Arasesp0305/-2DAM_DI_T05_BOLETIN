@@ -8,8 +8,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Documentacion de T05_DOC_PRUEBAS'
-copyright = '2024, Jesulin'
-author = 'Jesulin'
+copyright = '2025, Grupo 03'
+author = 'Grupo 03'
 release = '1'
 
 # -- General configuration ---------------------------------------------------
