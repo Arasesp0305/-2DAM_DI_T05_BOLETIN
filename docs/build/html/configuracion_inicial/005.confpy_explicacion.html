@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5. Explicación del archivo “conf.py” &mdash; documentación de Documentacion de T05_DOC_PRUEBAS - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="6. Explicación de index.md" href="006.index.html" />
+    <link rel="prev" title="4. Explicación de la Estructura inicial del proyecto" href="004.estructura_inicial.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Documentacion de T05_DOC_PRUEBAS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">1. Configuración Inicial del Proyecto</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="001.env.html">1. Entorno Virtual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002.instalacion_librerias.html">2. Instalación de las Librerías Necesarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="003.creacion_con_sphinx.html">3. Creación inicial del proyecto con Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="004.estructura_inicial.html">4. Explicación de la Estructura inicial del proyecto</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Explicación del archivo “conf.py”</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#que-es-el-archivo-conf-py">5.1. ¿Qué es el archivo “conf.py”?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#informacion-sobre-el-proyecto">5.2. Información sobre el proyecto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importes-y-ruta">5.3. Importes y ruta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuracion-general">5.4. Configuración general</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#extensiones">5.4.1. Extensiones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#rutas-de-plantillas">5.4.2. Rutas de plantillas</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#exclusiones">5.4.3. Exclusiones</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#idioma">5.4.4. Idioma</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tipos-de-archivo-fuente">5.4.5. Tipos de archivo fuente</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#opciones-para-salida-html">5.5. Opciones para salida HTML</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tema-visual">5.5.1. Tema visual</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#recursos-estaticos">5.5.2. Recursos estáticos</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#extensiones-de-myst">5.5.3. Extensiones de MyST</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#heading-anchor">5.5.4. Heading Anchor</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="006.index.html">6. Explicación de index.md</a></li>
+<li class="toctree-l1"><a class="reference internal" href="007.generacion_automatica.html">7. Generacion automatica de documentacion.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="008.HTML_documentacion.html">8. Generacion de HTML a partir de la Documentacion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="009.generacion_PDF.html">9. Generar PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="010.estructura-final.html">10. Estructura final del proyecto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2. Comandos usados en el proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comandos/001.comandos_utilizados.html">1. Explicación de Comandos Usados en Sphinx</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">3. Guía de uso MyST-Parser</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/001.typography.html">1. Typography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/002.admonitions.html">2. Admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/003.prueba_imagen.html">3. Insertar imagen en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/004.prueba_tabla.html">4. Insertar tablas en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/005.prueba_codigo_y_api.html">5. Insertar codigo fuente y APIs en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/006.referencias_cruzadas.html">6. Referencias cruzadas con MyST Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/007.organizar_contenido.html">7. Organizar contenido en Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/008.extensiones_de_sintaxis.html">8. Extensiones de Sintaxis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/009.roles_y_directivas.html">9. Roles y Directivas</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentacion de T05_DOC_PRUEBAS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5. </span>Explicación del archivo “conf.py”</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/configuracion_inicial/005.confpy_explicacion.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="explicacion-del-archivo-conf-py">
+<h1><span class="section-number">5. </span>Explicación del archivo “conf.py”<a class="headerlink" href="#explicacion-del-archivo-conf-py" title="Link to this heading"></a></h1>
+<section id="que-es-el-archivo-conf-py">
+<h2><span class="section-number">5.1. </span>¿Qué es el archivo “conf.py”?<a class="headerlink" href="#que-es-el-archivo-conf-py" title="Link to this heading"></a></h2>
+<p>El archivo conf.py es la configuración principal para un proyecto de documentación generado con Sphinx. Aquí se definen detalles como la información del proyecto, extensiones habilitadas, rutas, idioma, temas de diseño, entre otros. A continuación, explicaremos en detalle los apartados de este archivo, siempre respaldado del propio archivo que tenemos:</p>
+</section>
+<section id="informacion-sobre-el-proyecto">
+<h2><span class="section-number">5.2. </span>Información sobre el proyecto<a class="headerlink" href="#informacion-sobre-el-proyecto" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">project</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Documentacion de T05_DOC_PRUEBAS&#39;</span>
+<span class="nv">copyright</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2025, Grupo 03&#39;</span>
+<span class="nv">author</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;Grupo 03&#39;</span>
+<span class="nv">release</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;1&#39;</span>
+</pre></div>
+</div>
+<p><strong>project</strong>: Define el nombre del proyecto que se documenta. En este caso, “Documentacion de T05_DOC_PRUEBAS”.<br />
+<strong>copyright</strong>: Indica el aviso de derechos de autor que aparecerá en la documentación. Incluye el año y el propietario. Aquí es “2025, Grupo 03”.<br />
+<strong>author</strong>: Nombre del autor o grupo responsable de la documentación. Aquí es “Grupo 03”.<br />
+<strong>release</strong>: Versión o número de lanzamiento del proyecto documentado. Aquí es “1”</p>
+</section>
+<section id="importes-y-ruta">
+<h2><span class="section-number">5.3. </span>Importes y ruta<a class="headerlink" href="#importes-y-ruta" title="Link to this heading"></a></h2>
+<p>El archivo cuenta con diversos importes para el correcto funcionamiento del mismo, y para crear un html estilizado y agradable a la vista; además de establecer una ruta para buscar los modulos que va a usar:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>import<span class="w"> </span>os<span class="w">  </span><span class="c1"># Módulo para gestionar rutas del sistema operativo</span>
+import<span class="w"> </span>sys<span class="w">  </span><span class="c1"># Módulo para modificar el path de búsqueda de Python</span>
+import<span class="w"> </span>sphinx_rtd_theme<span class="w">  </span><span class="c1"># Tema para mejorar el diseño visual de la documentación</span>
+
+<span class="c1"># os.path.abspath(&#39;../&#39;) obtiene la ruta absoluta del directorio superior al actual</span>
+<span class="c1"># sys.path.insert(0, ...) añade esta ruta al inicio de sys.path, que es donde Python busca los módulos</span>
+sys.path.insert<span class="o">(</span><span class="m">0</span>,<span class="w"> </span>os.path.abspath<span class="o">(</span><span class="s1">&#39;../&#39;</span><span class="o">))</span>
+</pre></div>
+</div>
+</section>
+<section id="configuracion-general">
+<h2><span class="section-number">5.4. </span>Configuración general<a class="headerlink" href="#configuracion-general" title="Link to this heading"></a></h2>
+<section id="extensiones">
+<h3><span class="section-number">5.4.1. </span>Extensiones<a class="headerlink" href="#extensiones" title="Link to this heading"></a></h3>
+<p>La lista “extensions” contiene módulos adicionales que amplían las capacidades de Sphinx:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">extensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>
+<span class="w">    </span><span class="s2">&quot;sphinx.ext.autodoc&quot;</span>,<span class="w">  </span><span class="c1"># Genera documentación automáticamente desde docstrings</span>
+<span class="w">    </span><span class="s2">&quot;sphinx.ext.napoleon&quot;</span>,<span class="w">  </span><span class="c1"># Interpreta docstrings en formatos Google y NumPy</span>
+<span class="w">    </span><span class="s2">&quot;sphinx.ext.viewcode&quot;</span>,<span class="w">  </span><span class="c1"># Agrega enlaces al código fuente desde la documentación</span>
+<span class="w">    </span><span class="s2">&quot;sphinx_rtd_theme&quot;</span>,<span class="w">  </span><span class="c1"># Tema visual basado en Read the Docs</span>
+<span class="w">    </span><span class="s2">&quot;myst_parser&quot;</span>,<span class="w">  </span><span class="c1"># Habilita soporte para archivos Markdown</span>
+<span class="w">    </span><span class="s2">&quot;sphinx_markdown_builder&quot;</span>,<span class="w"> </span><span class="c1">#Permite a Sphinx generar salida en formato Markdown para documentación</span>
+<span class="w">    </span><span class="s2">&quot;sphinx_autodoc_typehints&quot;</span><span class="w"> </span><span class="c1">#se usa para mejorar cómo se muestran las anotaciones en los docstrings</span>
+<span class="o">]</span>
+</pre></div>
+</div>
+<p><strong>sphinx.ext.autodoc</strong>: Genera documentación automáticamente a partir de docstrings del código fuente.<br />
+<strong>sphinx.ext.napoleon</strong>: Soporta docstrings en los formatos de estilo Google y NumPy, facilitando su interpretación y conversión a HTML.<br />
+<strong>sphinx.ext.viewcode</strong>: Incluye enlaces al código fuente desde la documentación.<br />
+<strong>sphinx_rtd_theme</strong>: Integra el tema visual basado en Read the Docs.<br />
+<strong>myst_parser</strong>: Permite incluir archivos en formato Markdown (.md) en la documentación.<br />
+<strong>sphinx_markdown_builder</strong>: Permite a Sphinx generar salida en formato Markdown para documentación.<br />
+<strong>sphinx_autodoc_typehints</strong>: Se usa para mejorar cómo se muestran las anotaciones en los docstrings.</p>
+</section>
+<section id="rutas-de-plantillas">
+<h3><span class="section-number">5.4.2. </span>Rutas de plantillas<a class="headerlink" href="#rutas-de-plantillas" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">templates_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s1">&#39;_templates&#39;</span><span class="o">]</span>
+</pre></div>
+</div>
+<p><strong>templates_path = [“_templates”]</strong>: Indica el directorio donde se encuentran las plantillas personalizadas para la documentación.</p>
+</section>
+<section id="exclusiones">
+<h3><span class="section-number">5.4.3. </span>Exclusiones<a class="headerlink" href="#exclusiones" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">exclude_patterns</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[]</span>
+</pre></div>
+</div>
+<p><strong>exclude_patterns = []</strong>: Lista de patrones (archivos o directorios) que Sphinx ignorará durante la generación de la documentación.</p>
+</section>
+<section id="idioma">
+<h3><span class="section-number">5.4.4. </span>Idioma<a class="headerlink" href="#idioma" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">language</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;es&#39;</span>
+</pre></div>
+</div>
+<p><strong>language = “es”</strong>: Configura el idioma de la documentación a español.</p>
+</section>
+<section id="tipos-de-archivo-fuente">
+<h3><span class="section-number">5.4.5. </span>Tipos de archivo fuente<a class="headerlink" href="#tipos-de-archivo-fuente" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">source_suffix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">{</span>
+<span class="w">    </span><span class="s1">&#39;.rst&#39;</span>:<span class="w"> </span><span class="s1">&#39;restructuredtext&#39;</span>,<span class="w">  </span><span class="c1"># Archivos en formato reStructuredText</span>
+<span class="w">    </span><span class="s1">&#39;.md&#39;</span>:<span class="w"> </span><span class="s1">&#39;markdown&#39;</span>,<span class="w">  </span><span class="c1"># Archivos en formato Markdown</span>
+<span class="o">}</span>
+</pre></div>
+</div>
+<p><strong>source_suffix</strong>: Mapea las extensiones de los archivos fuente soportados por Sphinx a sus formatos respectivos. Aquí se incluyen:<br />
+“.rst”: Archivos en formato reStructuredText.<br />
+“.md”: Archivos en formato Markdown (habilitados por myst_parser).</p>
+</section>
+</section>
+<section id="opciones-para-salida-html">
+<h2><span class="section-number">5.5. </span>Opciones para salida HTML<a class="headerlink" href="#opciones-para-salida-html" title="Link to this heading"></a></h2>
+<section id="tema-visual">
+<h3><span class="section-number">5.5.1. </span>Tema visual<a class="headerlink" href="#tema-visual" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">html_theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;sphinx_rtd_theme&#39;</span>
+</pre></div>
+</div>
+<p><strong>html_theme = “sphinx_rtd_theme”</strong>: Define el tema para la documentación en formato HTML. En este caso, se utiliza sphinx_rtd_theme, un tema visual basado en el estilo de Read the Docs.</p>
+</section>
+<section id="recursos-estaticos">
+<h3><span class="section-number">5.5.2. </span>Recursos estáticos<a class="headerlink" href="#recursos-estaticos" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">html_static_path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s1">&#39;_static&#39;</span><span class="o">]</span>
+</pre></div>
+</div>
+<p><strong>html_static_path = [“_static”]</strong>: Especifica el directorio donde se almacenan archivos estáticos personalizados, como hojas de estilo (CSS), JavaScript o imágenes. Estos recursos se aplican a la documentación generada.</p>
+</section>
+<section id="extensiones-de-myst">
+<h3><span class="section-number">5.5.3. </span>Extensiones de MyST<a class="headerlink" href="#extensiones-de-myst" title="Link to this heading"></a></h3>
+<p>Esta configuración activa una extensión específica en MyST-Parser para habilitar las cercas de dos puntos en Markdown.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">myst_enable_extensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;colon_fence&quot;</span>,<span class="w"> </span>
+<span class="w">                          </span><span class="s2">&quot;replacements&quot;</span>,<span class="w"> </span>
+<span class="w">                          </span><span class="s2">&quot;strikethrough&quot;</span>,<span class="w"> </span>
+<span class="w">                          </span><span class="s2">&quot;dollarmath&quot;</span><span class="w"> </span>
+<span class="w">                          </span><span class="o">]</span><span class="w"> </span>
+</pre></div>
+</div>
+<p><strong>colon_fence</strong>: Permite el uso de cercas de dos puntos (:::) para crear bloques personalizados como admoniciones, bloques estilizados o contenido enriquecido.
+<strong>replacements</strong>: Habilita el uso de variables o sustituciones en Markdown para reutilizar texto fácilmente.
+<strong>strikethrough</strong>: Permite usar sintaxis de tachado en Markdown.
+<strong>dollarmath</strong>: Habilita la sintaxis matemática con delimitadores de dólar. Útil para escribir expresiones matemáticas</p>
+</section>
+<section id="heading-anchor">
+<h3><span class="section-number">5.5.4. </span>Heading Anchor<a class="headerlink" href="#heading-anchor" title="Link to this heading"></a></h3>
+<p>Esta línea define el nivel de encabezados que tendrán anclas automáticas generadas. Las anclas permiten crear enlaces directos a encabezados específicos en la documentación. Esto es útil para facilitar la navegación y compartir enlaces a secciones concretas.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">myst_heading_anchors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="m">2</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="004.estructura_inicial.html" class="btn btn-neutral float-left" title="4. Explicación de la Estructura inicial del proyecto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="006.index.html" class="btn btn-neutral float-right" title="6. Explicación de index.md" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Grupo 03.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

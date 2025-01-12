@@ -1,0 +1,16 @@
+# Roles y Directivas
+
+## Roles
+En MyST Parser los roles se usan para indicarle a un bloque de código cómo comportarse, por ejemplo, para introducir una foto dentro de nuestra documentación utilizamos el rol "image" entre llaves:
+```bash
+    ```{image} ruta\\a\\la\\imagen.png
+```
+
+## Directivas
+Las directivas son parámetros opcionales que se incluyen dentro de los roles para indicarles como tienen que comportarse, se especifican entre `:`
+
+```bash
+   ```{image} ruta\\a\\la\\imagen.png
+    :alt: Texto alternativo para la imagen
+    :width: Anchura (en px)
+```

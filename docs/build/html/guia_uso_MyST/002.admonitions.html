@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Admonitions &mdash; documentación de Documentacion de T05_DOC_PRUEBAS - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="3. Insertar imagen en sphinx" href="003.prueba_imagen.html" />
+    <link rel="prev" title="1. Typography" href="001.typography.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Documentacion de T05_DOC_PRUEBAS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">1. Configuración Inicial del Proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/001.env.html">1. Entorno Virtual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/002.instalacion_librerias.html">2. Instalación de las Librerías Necesarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/003.creacion_con_sphinx.html">3. Creación inicial del proyecto con Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/004.estructura_inicial.html">4. Explicación de la Estructura inicial del proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/005.confpy_explicacion.html">5. Explicación del archivo “conf.py”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/006.index.html">6. Explicación de index.md</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/007.generacion_automatica.html">7. Generacion automatica de documentacion.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/008.HTML_documentacion.html">8. Generacion de HTML a partir de la Documentacion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/009.generacion_PDF.html">9. Generar PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/010.estructura-final.html">10. Estructura final del proyecto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2. Comandos usados en el proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comandos/001.comandos_utilizados.html">1. Explicación de Comandos Usados en Sphinx</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">3. Guía de uso MyST-Parser</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="001.typography.html">1. Typography</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Admonitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#extension-necesaria">2.1. Extension necesaria</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#que-son-los-admonitions">2.2. Que son los admonitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#como-usarlas">2.3. Como usarlas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-admoniciones">2.4. Tipos de admoniciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sintaxis-basica">2.5. Sintaxis basica</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#nota">2.5.1. Nota</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#advertencia">2.5.2. Advertencia</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#peligro">2.5.3. Peligro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#consejo">2.5.4. Consejo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#error">2.5.5. Error</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#admoniciones-personalizadas">2.5.6. Admoniciones personalizadas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="003.prueba_imagen.html">3. Insertar imagen en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="004.prueba_tabla.html">4. Insertar tablas en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="005.prueba_codigo_y_api.html">5. Insertar codigo fuente y APIs en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="006.referencias_cruzadas.html">6. Referencias cruzadas con MyST Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="007.organizar_contenido.html">7. Organizar contenido en Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="008.extensiones_de_sintaxis.html">8. Extensiones de Sintaxis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="009.roles_y_directivas.html">9. Roles y Directivas</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentacion de T05_DOC_PRUEBAS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2. </span>Admonitions</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/guia_uso_MyST/002.admonitions.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="admonitions">
+<h1><span class="section-number">2. </span>Admonitions<a class="headerlink" href="#admonitions" title="Link to this heading"></a></h1>
+<section id="extension-necesaria">
+<h2><span class="section-number">2.1. </span>Extension necesaria<a class="headerlink" href="#extension-necesaria" title="Link to this heading"></a></h2>
+<p>Para que las “admonitions” funcionen es necesario que dentro del archivo de configuracion esté la siguiente línea:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">myst_enable_extensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>
+<span class="w">    </span><span class="s2">&quot;colon_fence&quot;</span>,<span class="w"> </span>
+<span class="w">    </span>
+<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="que-son-los-admonitions">
+<h2><span class="section-number">2.2. </span>Que son los admonitions<a class="headerlink" href="#que-son-los-admonitions" title="Link to this heading"></a></h2>
+<p>Son bloques especiales que se pueden incluir en la documentación para destacar contenido con distintos propositos- Estos bloques son:</p>
+<ul class="simple">
+<li><p>Notas</p></li>
+<li><p>Advertencias</p></li>
+<li><p>Consejos</p></li>
+<li><p>Errores</p></li>
+<li><p>Peligros</p></li>
+</ul>
+<p>Estos nos permiten mejorar la legibilidad de la documentación y atraer la atención hacia un contenido específico.</p>
+</section>
+<section id="como-usarlas">
+<h2><span class="section-number">2.3. </span>Como usarlas<a class="headerlink" href="#como-usarlas" title="Link to this heading"></a></h2>
+<p>En MyST, las admoniciones se crean con la siguiente secuencia</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:::<span class="o">{</span>admonition-type<span class="o">}</span>:::<span class="w"> </span>
+
+siendo<span class="w"> </span>un<span class="w"> </span>ejemplo<span class="w"> </span>
+
+:::<span class="o">{</span>note<span class="o">}</span>:::
+</pre></div>
+</div>
+</section>
+<section id="tipos-de-admoniciones">
+<h2><span class="section-number">2.4. </span>Tipos de admoniciones<a class="headerlink" href="#tipos-de-admoniciones" title="Link to this heading"></a></h2>
+<p>MyST cuenta con diferentes tipos de admoniciones ya predefinidas las que podremos usar directamente sin especificar el tipo, estas son las siguientes:</p>
+</section>
+<section id="sintaxis-basica">
+<h2><span class="section-number">2.5. </span>Sintaxis basica<a class="headerlink" href="#sintaxis-basica" title="Link to this heading"></a></h2>
+<p>Para declarar una admonicion tendremos que usar los «:» y escribir entre «{}» el tipo de la admonicion.</p>
+<section id="nota">
+<h3><span class="section-number">2.5.1. </span>Nota<a class="headerlink" href="#nota" title="Link to this heading"></a></h3>
+<p>para declarar una admonicion de tipo nota escribiremos «note» entre corchetes</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:::<span class="o">{</span>note<span class="o">}</span>
+
+Esto<span class="w"> </span>es<span class="w"> </span>una<span class="w"> </span>nota
+:::
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Esto es una nota</p>
+</div>
+</section>
+<section id="advertencia">
+<h3><span class="section-number">2.5.2. </span>Advertencia<a class="headerlink" href="#advertencia" title="Link to this heading"></a></h3>
+<p>Para escribir una admonicion de tipo advertencia escribiremos «warning» entre los corchetes</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:::<span class="o">{</span>warning<span class="o">}</span>
+
+Esto<span class="w"> </span>es<span class="w"> </span>una<span class="w"> </span>advertencia
+:::
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia</p>
+<p>Esto es una advertencia</p>
+</div>
+</section>
+<section id="peligro">
+<h3><span class="section-number">2.5.3. </span>Peligro<a class="headerlink" href="#peligro" title="Link to this heading"></a></h3>
+<p>Para escribir una admonicion de tipo peligro escribiremos «danger» entre los corchetes</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:::<span class="o">{</span>danger<span class="o">}</span>
+
+Esto<span class="w"> </span>es<span class="w"> </span>peligroso
+:::
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Peligro</p>
+<p>Esto es peligroso</p>
+</div>
+</section>
+<section id="consejo">
+<h3><span class="section-number">2.5.4. </span>Consejo<a class="headerlink" href="#consejo" title="Link to this heading"></a></h3>
+<p>Para escribir una admonicion de tipo consejo escribiremos «tip» entre los corchetes</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:::<span class="o">{</span>tip<span class="o">}</span>
+
+Esto<span class="w"> </span>es<span class="w"> </span>un<span class="w"> </span>consejo
+:::
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<div class="admonition tip">
+<p class="admonition-title">Truco</p>
+<p>Esto es un consejo</p>
+</div>
+</section>
+<section id="error">
+<h3><span class="section-number">2.5.5. </span>Error<a class="headerlink" href="#error" title="Link to this heading"></a></h3>
+<p>Para escribir una admonicion de tipo error escribiremos «error» entre los corchetes</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:::<span class="o">{</span>error<span class="o">}</span>
+
+Esto<span class="w"> </span>es<span class="w"> </span>un<span class="w"> </span>error
+:::
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<p>Esto es un error</p>
+</div>
+</section>
+<section id="admoniciones-personalizadas">
+<h3><span class="section-number">2.5.6. </span>Admoniciones personalizadas<a class="headerlink" href="#admoniciones-personalizadas" title="Link to this heading"></a></h3>
+<p>Para declarar una admonicion personalizada escribiremos admonition entre corchetes y seguidamente el titulo personalizado fuera de estos:</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>:::<span class="o">{</span>admonition<span class="o">}</span>Titulo<span class="w"> </span>Personalizado
+
+Esto<span class="w"> </span>es<span class="w"> </span>una<span class="w"> </span>admonicion<span class="w"> </span>personalizada
+:::
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<div class="admonition-titulo-personalizado admonition">
+<p class="admonition-title">Titulo Personalizado</p>
+<p>Esto es una admonicion personalizada</p>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="001.typography.html" class="btn btn-neutral float-left" title="1. Typography" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="003.prueba_imagen.html" class="btn btn-neutral float-right" title="3. Insertar imagen en sphinx" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Grupo 03.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

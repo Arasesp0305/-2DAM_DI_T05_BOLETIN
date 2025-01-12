@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>7. Organizar contenido en Sphinx &mdash; documentación de Documentacion de T05_DOC_PRUEBAS - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="8. Extensiones de Sintaxis" href="008.extensiones_de_sintaxis.html" />
+    <link rel="prev" title="6. Referencias cruzadas con MyST Parser" href="006.referencias_cruzadas.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Documentacion de T05_DOC_PRUEBAS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">1. Configuración Inicial del Proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/001.env.html">1. Entorno Virtual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/002.instalacion_librerias.html">2. Instalación de las Librerías Necesarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/003.creacion_con_sphinx.html">3. Creación inicial del proyecto con Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/004.estructura_inicial.html">4. Explicación de la Estructura inicial del proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/005.confpy_explicacion.html">5. Explicación del archivo “conf.py”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/006.index.html">6. Explicación de index.md</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/007.generacion_automatica.html">7. Generacion automatica de documentacion.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/008.HTML_documentacion.html">8. Generacion de HTML a partir de la Documentacion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/009.generacion_PDF.html">9. Generar PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/010.estructura-final.html">10. Estructura final del proyecto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2. Comandos usados en el proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comandos/001.comandos_utilizados.html">1. Explicación de Comandos Usados en Sphinx</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">3. Guía de uso MyST-Parser</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="001.typography.html">1. Typography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002.admonitions.html">2. Admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="003.prueba_imagen.html">3. Insertar imagen en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="004.prueba_tabla.html">4. Insertar tablas en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="005.prueba_codigo_y_api.html">5. Insertar codigo fuente y APIs en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="006.referencias_cruzadas.html">6. Referencias cruzadas con MyST Parser</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. Organizar contenido en Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#estructura-de-documento">7.1. Estructura de documento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#insertar-documentos-dentro-del-contenido-de-otro-documento">7.2. Insertar documentos dentro del contenido de otro documento</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#organizar-documentos-con-toctree">7.3. Organizar documentos con toctree</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="008.extensiones_de_sintaxis.html">8. Extensiones de Sintaxis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="009.roles_y_directivas.html">9. Roles y Directivas</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentacion de T05_DOC_PRUEBAS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">7. </span>Organizar contenido en Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/guia_uso_MyST/007.organizar_contenido.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="organizar-contenido-en-sphinx">
+<h1><span class="section-number">7. </span>Organizar contenido en Sphinx<a class="headerlink" href="#organizar-contenido-en-sphinx" title="Link to this heading"></a></h1>
+<p>Sphinx nos permite organizar el contenido en distintos documentos, así como incluir contenido de otros documentos.</p>
+<section id="estructura-de-documento">
+<h2><span class="section-number">7.1. </span>Estructura de documento<a class="headerlink" href="#estructura-de-documento" title="Link to this heading"></a></h2>
+<p>Los documentos de Sphinx están organizados mediante cabeceras.</p>
+<p>Todas las cabeceras al nivel de la raiz del documento se incluyen en la Tabla de Contenidos de esa página.</p>
+<p>Muchos temas ya incluyen esta tabla de contenidos en una barra lateral, pero también podemos incluirla en el contenido principal de la página con la directiva «contents».</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="sb">```</span><span class="o">{</span>contents<span class="o">}</span><span class="w"> </span>Table<span class="w"> </span>of<span class="w"> </span>Contents
+<span class="w">    </span>:depth:<span class="w"> </span><span class="m">3</span>
+<span class="w">    </span><span class="sb">```</span>
+</pre></div>
+</div>
+</section>
+<section id="insertar-documentos-dentro-del-contenido-de-otro-documento">
+<h2><span class="section-number">7.2. </span>Insertar documentos dentro del contenido de otro documento<a class="headerlink" href="#insertar-documentos-dentro-del-contenido-de-otro-documento" title="Link to this heading"></a></h2>
+<p>La directiva «include» nos permite insertar el contenido de otro documento directamente al flujo del documento actual.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="sb">```</span><span class="o">{</span>include<span class="o">}</span><span class="w"> </span>nombre_documento.extension
+<span class="w">        </span>:start-line:<span class="w"> </span>linea<span class="w"> </span>en<span class="w"> </span>la<span class="w"> </span>que<span class="w"> </span>quieres<span class="w"> </span>empezar<span class="w"> </span>a<span class="w"> </span>insertar
+<span class="w">        </span>:end-line:<span class="w"> </span>linea<span class="w"> </span>en<span class="w"> </span>la<span class="w"> </span>que<span class="w"> </span>quieres<span class="w"> </span>parar<span class="w"> </span>de<span class="w"> </span>mostrar
+<span class="w">    </span><span class="sb">```</span>
+</pre></div>
+</div>
+<p>De otra forma, si lo que quieres es insertar un bloque de codigo de otro documento, usamos la directiva «literalinclude».</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="sb">```</span><span class="o">{</span>literalinclude<span class="o">}</span><span class="w"> </span>nombre_documento.extension
+<span class="w">    </span><span class="sb">```</span>
+</pre></div>
+</div>
+</section>
+<section id="organizar-documentos-con-toctree">
+<h2><span class="section-number">7.3. </span>Organizar documentos con toctree<a class="headerlink" href="#organizar-documentos-con-toctree" title="Link to this heading"></a></h2>
+<p>Si lo que queremos es que algunos documentos sean hijos de otros, podemos usar la directiva «toctree», indicando dentro de esta los documentos que queremos hacer hijos.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w">    </span><span class="sb">```</span><span class="o">{</span>toctree<span class="o">}</span>
+<span class="w">    </span>examples/content_child1.md
+<span class="w">    </span>examples/content_child2.md
+<span class="w">    </span><span class="sb">```</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="006.referencias_cruzadas.html" class="btn btn-neutral float-left" title="6. Referencias cruzadas con MyST Parser" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="008.extensiones_de_sintaxis.html" class="btn btn-neutral float-right" title="8. Extensiones de Sintaxis" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Grupo 03.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

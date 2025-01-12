@@ -1,0 +1,237 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5. Insertar codigo fuente y APIs en sphinx &mdash; documentación de Documentacion de T05_DOC_PRUEBAS - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="6. Referencias cruzadas con MyST Parser" href="006.referencias_cruzadas.html" />
+    <link rel="prev" title="4. Insertar tablas en sphinx" href="004.prueba_tabla.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Documentacion de T05_DOC_PRUEBAS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">1. Configuración Inicial del Proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/001.env.html">1. Entorno Virtual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/002.instalacion_librerias.html">2. Instalación de las Librerías Necesarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/003.creacion_con_sphinx.html">3. Creación inicial del proyecto con Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/004.estructura_inicial.html">4. Explicación de la Estructura inicial del proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/005.confpy_explicacion.html">5. Explicación del archivo “conf.py”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/006.index.html">6. Explicación de index.md</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/007.generacion_automatica.html">7. Generacion automatica de documentacion.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/008.HTML_documentacion.html">8. Generacion de HTML a partir de la Documentacion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/009.generacion_PDF.html">9. Generar PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/010.estructura-final.html">10. Estructura final del proyecto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2. Comandos usados en el proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comandos/001.comandos_utilizados.html">1. Explicación de Comandos Usados en Sphinx</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">3. Guía de uso MyST-Parser</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="001.typography.html">1. Typography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="002.admonitions.html">2. Admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="003.prueba_imagen.html">3. Insertar imagen en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="004.prueba_tabla.html">4. Insertar tablas en sphinx</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Insertar codigo fuente y APIs en sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#representar-codgio-fuente">5.1. Representar códgio fuente</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#representar-codigo-de-forma-general">5.1.1. Representar código de forma general</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#representar-codigo-con-una-sintaxis-especifica">5.1.2. Representar código con una sintaxis específica</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#documentar-una-api-con-sphinx">5.2. Documentar una API con sphinx</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#instalar-autodoc-typehints">5.2.1. Instalar Autodoc-Typehints</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implementar-la-dependencia-dentro-de-nuestro-proyecto">5.2.2. Implementar la dependencia dentro de nuestro proyecto</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#comentar-de-forma-correcta-el-codigo">5.2.3. Comentar de forma correcta el código</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generar-el-archivo-de-documentacion">5.2.4. Generar el archivo de documentacion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="006.referencias_cruzadas.html">6. Referencias cruzadas con MyST Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="007.organizar_contenido.html">7. Organizar contenido en Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="008.extensiones_de_sintaxis.html">8. Extensiones de Sintaxis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="009.roles_y_directivas.html">9. Roles y Directivas</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentacion de T05_DOC_PRUEBAS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">5. </span>Insertar codigo fuente y APIs en sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/guia_uso_MyST/005.prueba_codigo_y_api.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="insertar-codigo-fuente-y-apis-en-sphinx">
+<h1><span class="section-number">5. </span>Insertar codigo fuente y APIs en sphinx<a class="headerlink" href="#insertar-codigo-fuente-y-apis-en-sphinx" title="Link to this heading"></a></h1>
+<section id="representar-codgio-fuente">
+<h2><span class="section-number">5.1. </span>Representar códgio fuente<a class="headerlink" href="#representar-codgio-fuente" title="Link to this heading"></a></h2>
+<section id="representar-codigo-de-forma-general">
+<h3><span class="section-number">5.1.1. </span>Representar código de forma general<a class="headerlink" href="#representar-codigo-de-forma-general" title="Link to this heading"></a></h3>
+<p>Si queremos documentar un trozo de código sin resaltar ninguna sintaxis específica del lenguaje utilizado podemos hacerlo de la siguiente forma:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="sb">```</span>bash
+<span class="c1"># Ejemplo de código en Python</span>
+def<span class="w"> </span>saludar<span class="o">(</span>nombre<span class="o">)</span>:
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>f<span class="s2">&quot;Hola, {nombre}!&quot;</span>
+<span class="w">    </span><span class="sb">```</span>
+</pre></div>
+</div>
+<p>Este ejemplo quedaría representado de esta forma:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ejemplo de código en Python</span>
+def<span class="w"> </span>saludar<span class="o">(</span>nombre<span class="o">)</span>:
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>f<span class="s2">&quot;Hola, {nombre}!&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="representar-codigo-con-una-sintaxis-especifica">
+<h3><span class="section-number">5.1.2. </span>Representar código con una sintaxis específica<a class="headerlink" href="#representar-codigo-con-una-sintaxis-especifica" title="Link to this heading"></a></h3>
+<p>Si queremos documentar un trozo de código marcando con colores la sintaxis del lenguaje utilizado podemos especificar después de las comillas el lenguaje al que nos estamos refiriendo:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="sb">```</span>python
+<span class="c1"># Ejemplo de código en Python</span>
+def<span class="w"> </span>saludar<span class="o">(</span>nombre<span class="o">)</span>:
+<span class="w">    </span><span class="k">return</span><span class="w"> </span>f<span class="s2">&quot;Hola, {nombre}!&quot;</span>
+<span class="w">    </span><span class="sb">```</span>
+</pre></div>
+</div>
+<p>Este ejemplo quedaría representado de esta forma:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ejemplo de código en Python</span>
+<span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">):</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">!&quot;</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="documentar-una-api-con-sphinx">
+<h2><span class="section-number">5.2. </span>Documentar una API con sphinx<a class="headerlink" href="#documentar-una-api-con-sphinx" title="Link to this heading"></a></h2>
+<section id="instalar-autodoc-typehints">
+<h3><span class="section-number">5.2.1. </span>Instalar Autodoc-Typehints<a class="headerlink" href="#instalar-autodoc-typehints" title="Link to this heading"></a></h3>
+<p>Primero, debemos instalar la dependecia sphinx-autodoc-typehints en nuestro entorno ejecutando el siguiente comando:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx-autodoc-typehints
+</pre></div>
+</div>
+</section>
+<section id="implementar-la-dependencia-dentro-de-nuestro-proyecto">
+<h3><span class="section-number">5.2.2. </span>Implementar la dependencia dentro de nuestro proyecto<a class="headerlink" href="#implementar-la-dependencia-dentro-de-nuestro-proyecto" title="Link to this heading"></a></h3>
+<p>Ahora, debemos implementar la dependencia que acabamos de instalar dentro de nuestro archivo «conf.py», más concretamente dentro del arreglo «extensions»:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Lista de extensiones activadas en Sphinx</span>
+<span class="nv">extensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>
+<span class="w">    </span><span class="s1">&#39;sphinx.ext.autodoc&#39;</span>,<span class="w">  </span><span class="c1"># Genera documentación automáticamente desde docstrings</span>
+<span class="w">    </span><span class="s1">&#39;sphinx.ext.napoleon&#39;</span>,<span class="w">  </span><span class="c1"># Interpreta docstrings en formatos Google y NumPy</span>
+<span class="w">    </span><span class="s1">&#39;sphinx.ext.viewcode&#39;</span>,<span class="w">  </span><span class="c1"># Agrega enlaces al código fuente desde la documentación</span>
+<span class="w">    </span><span class="s1">&#39;sphinx_rtd_theme&#39;</span>,<span class="w">  </span><span class="c1"># Tema visual basado en Read the Docs</span>
+<span class="w">    </span><span class="s1">&#39;myst_parser&#39;</span>,<span class="w">  </span><span class="c1"># Habilita soporte para archivos Markdown</span>
+<span class="w">    </span><span class="s2">&quot;sphinx_autodoc_typehints&quot;</span>
+<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="comentar-de-forma-correcta-el-codigo">
+<h3><span class="section-number">5.2.3. </span>Comentar de forma correcta el código<a class="headerlink" href="#comentar-de-forma-correcta-el-codigo" title="Link to this heading"></a></h3>
+<p>Ahora, comentamos de forma correcta el codigo de nuestro proyecto:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">saludar</span><span class="p">(</span><span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Saluda a un usuario.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        nombre (str): Nombre del usuario.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        str: Mensaje de saludo personalizado.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Hola, </span><span class="si">{</span><span class="n">nombre</span><span class="si">}</span><span class="s2">!&quot;</span>
+
+</pre></div>
+</div>
+</section>
+<section id="generar-el-archivo-de-documentacion">
+<h3><span class="section-number">5.2.4. </span>Generar el archivo de documentacion<a class="headerlink" href="#generar-el-archivo-de-documentacion" title="Link to this heading"></a></h3>
+<p>Para generar el archivo de documentacion de nuestro codigo usaremos «sphinx-apidoc»:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-apidoc<span class="w"> </span>-o<span class="w"> </span>docs/source/<span class="w"> </span>src/
+</pre></div>
+</div>
+<p>Esto generará archivos <code class="docutils literal notranslate"><span class="pre">.rst</span></code> en la carpeta <code class="docutils literal notranslate"><span class="pre">docs/source/</span></code></p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="004.prueba_tabla.html" class="btn btn-neutral float-left" title="4. Insertar tablas en sphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="006.referencias_cruzadas.html" class="btn btn-neutral float-right" title="6. Referencias cruzadas con MyST Parser" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Grupo 03.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

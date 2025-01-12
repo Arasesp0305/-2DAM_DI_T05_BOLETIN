@@ -1,0 +1,58 @@
+# Instalación de las Librerías Necesarias
+
+En este apartado explicamos cómo instalar las librerías requeridas para el proyecto, incluyendo una breve descripción de su propósito.
+
+## ¿Qué librerías necesitamos y para qué se utilizan?
+
+1. **Sphinx**: Herramienta que permite generar documentación en varios formatos como HTML, PDF o ePub.
+2. **sphinx-rtd-theme**: Proporciona un diseño visual moderno y profesional basado en el estilo de Read the Docs.
+3. **myst-parser**: Permite escribir documentación utilizando archivos Markdown, además del formato reStructuredText.
+4. **sphinx.ext.autodoc**: Extensión de Sphinx que genera automáticamente documentación a partir de los docstrings de los módulos, clases, métodos y funciones de un proyecto Python.
+5. **sphinx.ext.napoleon**: Extensión que facilita la interpretación de docstrings en los formatos Google y NumPy. Esto permite que los desarrolladores escriban documentación en un estilo más natural, alineado con estas convenciones populares.
+6. **sphinx_markdown_builder**: Extensión que permite a Sphinx generar documentación en formato Markdown como salida, además de los formatos estándar como HTML y PDF.
+---
+
+## Pasos para instalar las librerías usando un archivo 'requirements.txt'
+
+### Paso 1: Crear un archivo 'requirements.txt'
+
+Para facilitar la instalación, crea un archivo llamado 'requirements.txt' con este contenido:
+
+```bash
+sphinx
+sphinx-rtd-theme
+myst-parser
+sphinx.ext.autodoc
+sphinx.ext.napoleon
+sphinx_markdown_builder
+sphinx-autodoc-typehints
+```
+
+Una vez introducido, guarda el archivo.
+
+Ubicación:
+
+
+
+### Paso 2: Instalar las librerías
+
+Ahora, ejecuta el siguiente comando para instalar las librerías listadas:
+
+```bash
+pip install -r requirements.txt
+```
+
+Ejemplo:
+
+
+
+## Pasos para instalar las librerías usando un método manual.
+
+### Paso 1: Ejecutar el comando directamente
+
+```bash
+pip install sphinx sphinx-rtd-theme myst-parser sphinx_markdown_builder sphinx-autodoc-typehints
+```
+
+Ejemplo:
+

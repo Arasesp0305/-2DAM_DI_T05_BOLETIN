@@ -1,0 +1,48 @@
+# Referencias cruzadas con MyST Parser
+
+MyST-Parser ofrece caracteristicas de referenciado cruzado, para enlazarle URLs, documentos, cabeceras y más que generan "warnings" cuando se rompen.
+
+## Crear objetivos explícitos
+
+Los objetivos son anclas personalizadas a las que puedes referirte en otras partes de tu documentación
+
+Hay tres formas principales de crear objetivos:
+
+    1. Anotar un bloque de sintaxis con `(target)=`
+    2. Anotar un bloque de sintaxis con un atributo `{#id}`
+    3. Añadir la opción `nombre` a una directiva
+
+```bash
+(heading-target)=
+### Cabecera
+
+{#paragraph-target}
+Esto es un parrafo, con un atributo `id`.
+
+Esto es un [con un atributo `id`]{#span-target}.
+
+:::{note}
+:name: directive-target
+
+Esto es una directiva con la opción `nombre`.
+:::
+
+[reference1](#heading-target), [reference2](#paragraph-target),
+[reference3](#span-target), [reference4](#directive-target)
+```
+
+## Objetivos implícitos
+
+También puedes referenciar de forma directa a los objetivos a los que quieres apuntar, para ello hay dos formas:
+
+Que el titulo del enlace sea directamente lo que está referenciando
+```bash
+<project:#361-objetivos-implícitos>
+```
+<project:#361-objetivos-implícitos>
+
+O que el titulo del enlace sea personalizado
+```bash
+[Objetivos Implicitos](#361-objetivos-implícitos)
+```
+[Objetivos Implicitos](#361-objetivos-implícitos)

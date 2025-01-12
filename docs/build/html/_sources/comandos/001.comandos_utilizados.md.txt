@@ -1,0 +1,99 @@
+# Explicación de Comandos Usados en Sphinx
+
+##  Crear un Entorno Virtual
+
+```bash
+python -m venv env
+```
+Este comando crea un entorno virtual llamado env. Un entorno virtual es un espacio aislado para instalar las dependencias de Python, evitando conflictos con otras versiones de librerías o proyectos
+
+##  Activar el entorno Virtual
+```bash
+.\env\Scripts\activate
+```
+Este comando activa el entorno virtual creado previamente. Una vez activado, cualquier paquete que instales usando pip se instalará solo dentro de ese entorno.
+
+
+##  Comandos para las Dependencias de Sphinx
+
+Usando el archivo **requirements.txt**:
+
+```bash
+pip install -r requirements.txt
+```
+
+Manualmente:
+
+```bash
+pip install -U sphinx
+
+pip install sphinx_rtd_theme
+
+pip install myst-parser
+
+pip install sphinxcontrib-napoleon 
+
+pip install sphinx-autobuild
+
+pip install sphinx_markdown_builder
+
+pip install sphinx-autodoc-typehints
+```
+
+1. **sphinx**: La herramienta principal para generar documentación.
+
+2. **sphinx-rtd-theme**: Un tema profesional para la documentación, utilizado comúnmente en proyectos de documentación en línea.
+
+3. **sphinx-autobuild**: Permite previsualizar la documentación generada de manera automática a medida que realizas cambios.
+
+4. **sphinxcontrib-napoleon**: Habilita el soporte para los formatos de docstring de Google y NumPy.
+
+5. **myst-parser**: Permite usar archivos Markdown (.md) en lugar de reStructuredText (.rst) en Sphinx.
+
+6. **sphinx_markdown_builder**: Permite a Sphinx generar salida en formato Markdown para documentación
+
+7. **sphinx-autodoc-typehints**: Se usa para mejorar cómo se muestran las anotaciones en los docstrings
+
+##  Inicializar un Proyecto Sphinx
+
+```bash
+sphinx-quickstart
+```
+Este comando inicializa un proyecto de documentación Sphinx, generando una estructura básica de archivos y directorios que contiene:
+
+1. **conf.py**: Archivo de configuración.
+
+2. **index.rst o index.md**: El archivo principal de documentación.
+
+Al ejecutarlo, el comando te hará algunas preguntas para configurar el proyecto (por ejemplo, el nombre del proyecto, la versión, etc.).
+
+##  Generar Documentacion Automatica desde el Codigo
+
+```bash
+sphinx-apidoc -o source/
+```
+Este comando genera automáticamente la documentación de los módulos Python presentes en el directorio actual. El resultado se guarda en el directorio source/. Los archivos generados incluyen la documentación en formato reStructuredText (.rst) para cada archivo Python.
+
+##  Generar la Documentacion en HTML
+
+```bash
+.\docs\make.bat html 
+```
+Este comando construye la documentación en formato HTML. Los archivos generados se encuentran en el directorio build/html/. Puedes abrir index.html en tu navegador para ver el resultado.
+
+## Generar la Documentacion en PDF
+
+```bash
+sphinx-build -b pdf docs/source docs/build/pdf
+```
+
+El comando "sphinx-build -b pdf" genera la documentación en formato PDF a partir de la documentación fuente.
+
+
+## Generar documentacion de manera automatica
+
+```bash 
+sphinx-build -b markdown source/ build/
+```
+
+Este comando hace que genere el .md . Será generado gracias al sphinx-apidoc debido a la opcion -b, que hará que lo genere como .md en vez de .srt.

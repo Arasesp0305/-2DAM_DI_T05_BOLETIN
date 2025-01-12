@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Instalación de las Librerías Necesarias &mdash; documentación de Documentacion de T05_DOC_PRUEBAS - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="3. Creación inicial del proyecto con Sphinx" href="003.creacion_con_sphinx.html" />
+    <link rel="prev" title="1. Entorno Virtual" href="001.env.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Documentacion de T05_DOC_PRUEBAS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">1. Configuración Inicial del Proyecto</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="001.env.html">1. Entorno Virtual</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Instalación de las Librerías Necesarias</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#que-librerias-necesitamos-y-para-que-se-utilizan">2.1. ¿Qué librerías necesitamos y para qué se utilizan?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pasos-para-instalar-las-librerias-usando-un-archivo-requirements-txt">2.2. Pasos para instalar las librerías usando un archivo “requirements.txt”</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#paso-1-crear-un-archivo-requirements-txt">2.2.1. Paso 1: Crear un archivo “requirements.txt”</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#paso-2-instalar-las-librerias">2.2.2. Paso 2: Instalar las librerías</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#pasos-para-instalar-las-librerias-usando-un-metodo-manual">2.3. Pasos para instalar las librerías usando un método manual.</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#paso-1-ejecutar-el-comando-directamente">2.3.1. Paso 1: Ejecutar el comando directamente</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="003.creacion_con_sphinx.html">3. Creación inicial del proyecto con Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="004.estructura_inicial.html">4. Explicación de la Estructura inicial del proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="005.confpy_explicacion.html">5. Explicación del archivo “conf.py”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="006.index.html">6. Explicación de index.md</a></li>
+<li class="toctree-l1"><a class="reference internal" href="007.generacion_automatica.html">7. Generacion automatica de documentacion.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="008.HTML_documentacion.html">8. Generacion de HTML a partir de la Documentacion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="009.generacion_PDF.html">9. Generar PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="010.estructura-final.html">10. Estructura final del proyecto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2. Comandos usados en el proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comandos/001.comandos_utilizados.html">1. Explicación de Comandos Usados en Sphinx</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">3. Guía de uso MyST-Parser</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/001.typography.html">1. Typography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/002.admonitions.html">2. Admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/003.prueba_imagen.html">3. Insertar imagen en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/004.prueba_tabla.html">4. Insertar tablas en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/005.prueba_codigo_y_api.html">5. Insertar codigo fuente y APIs en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/006.referencias_cruzadas.html">6. Referencias cruzadas con MyST Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/007.organizar_contenido.html">7. Organizar contenido en Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/008.extensiones_de_sintaxis.html">8. Extensiones de Sintaxis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/009.roles_y_directivas.html">9. Roles y Directivas</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentacion de T05_DOC_PRUEBAS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">2. </span>Instalación de las Librerías Necesarias</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/configuracion_inicial/002.instalacion_librerias.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="instalacion-de-las-librerias-necesarias">
+<h1><span class="section-number">2. </span>Instalación de las Librerías Necesarias<a class="headerlink" href="#instalacion-de-las-librerias-necesarias" title="Link to this heading"></a></h1>
+<p>En este apartado explicamos cómo instalar las librerías requeridas para el proyecto, incluyendo una breve descripción de su propósito.</p>
+<section id="que-librerias-necesitamos-y-para-que-se-utilizan">
+<h2><span class="section-number">2.1. </span>¿Qué librerías necesitamos y para qué se utilizan?<a class="headerlink" href="#que-librerias-necesitamos-y-para-que-se-utilizan" title="Link to this heading"></a></h2>
+<ol class="arabic simple">
+<li><p><strong>Sphinx</strong>: Herramienta que permite generar documentación en varios formatos como HTML, PDF o ePub.</p></li>
+<li><p><strong>sphinx-rtd-theme</strong>: Proporciona un diseño visual moderno y profesional basado en el estilo de Read the Docs.</p></li>
+<li><p><strong>myst-parser</strong>: Permite escribir documentación utilizando archivos Markdown, además del formato reStructuredText.</p></li>
+<li><p><strong>sphinx.ext.autodoc</strong>: Extensión de Sphinx que genera automáticamente documentación a partir de los docstrings de los módulos, clases, métodos y funciones de un proyecto Python.</p></li>
+<li><p><strong>sphinx.ext.napoleon</strong>: Extensión que facilita la interpretación de docstrings en los formatos Google y NumPy. Esto permite que los desarrolladores escriban documentación en un estilo más natural, alineado con estas convenciones populares.</p></li>
+<li><p><strong>sphinx_markdown_builder</strong>: Extensión que permite a Sphinx generar documentación en formato Markdown como salida, además de los formatos estándar como HTML y PDF.</p></li>
+</ol>
+</section>
+<hr class="docutils" />
+<section id="pasos-para-instalar-las-librerias-usando-un-archivo-requirements-txt">
+<h2><span class="section-number">2.2. </span>Pasos para instalar las librerías usando un archivo “requirements.txt”<a class="headerlink" href="#pasos-para-instalar-las-librerias-usando-un-archivo-requirements-txt" title="Link to this heading"></a></h2>
+<section id="paso-1-crear-un-archivo-requirements-txt">
+<h3><span class="section-number">2.2.1. </span>Paso 1: Crear un archivo “requirements.txt”<a class="headerlink" href="#paso-1-crear-un-archivo-requirements-txt" title="Link to this heading"></a></h3>
+<p>Para facilitar la instalación, crea un archivo llamado “requirements.txt” con este contenido:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx
+sphinx-rtd-theme
+myst-parser
+sphinx.ext.autodoc
+sphinx.ext.napoleon
+sphinx_markdown_builder
+sphinx-autodoc-typehints
+</pre></div>
+</div>
+<p>Una vez introducido, guarda el archivo.</p>
+<p>Ubicación:</p>
+</section>
+<section id="paso-2-instalar-las-librerias">
+<h3><span class="section-number">2.2.2. </span>Paso 2: Instalar las librerías<a class="headerlink" href="#paso-2-instalar-las-librerias" title="Link to this heading"></a></h3>
+<p>Ahora, ejecuta el siguiente comando para instalar las librerías listadas:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+<p>Ejemplo:</p>
+</section>
+</section>
+<section id="pasos-para-instalar-las-librerias-usando-un-metodo-manual">
+<h2><span class="section-number">2.3. </span>Pasos para instalar las librerías usando un método manual.<a class="headerlink" href="#pasos-para-instalar-las-librerias-usando-un-metodo-manual" title="Link to this heading"></a></h2>
+<section id="paso-1-ejecutar-el-comando-directamente">
+<h3><span class="section-number">2.3.1. </span>Paso 1: Ejecutar el comando directamente<a class="headerlink" href="#paso-1-ejecutar-el-comando-directamente" title="Link to this heading"></a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>sphinx<span class="w"> </span>sphinx-rtd-theme<span class="w"> </span>myst-parser<span class="w"> </span>sphinx_markdown_builder<span class="w"> </span>sphinx-autodoc-typehints
+</pre></div>
+</div>
+<p>Ejemplo:</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="001.env.html" class="btn btn-neutral float-left" title="1. Entorno Virtual" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="003.creacion_con_sphinx.html" class="btn btn-neutral float-right" title="3. Creación inicial del proyecto con Sphinx" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Grupo 03.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

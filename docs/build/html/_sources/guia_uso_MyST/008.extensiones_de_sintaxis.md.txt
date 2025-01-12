@@ -1,0 +1,61 @@
+# Extensiones de Sintaxis
+
+Las extensiones que queramos añadir a nuestra documentacion las debemos añadir a un arreglo de Strings dentro de `conf.py` llamado `myst_enable_extensions`
+
+```bash
+myst_enable_extensions = [
+    "replacements",
+    "strikethrough",
+    "dollarmath"
+]
+```
+
+## Replacements
+La extension `Replacements` nos permite reemplazar ciertos caracteres entre paréntesis por ciertos caracteres especiales, como por ejemplo:
+```bash
+- (c)
+- (tm)
+- (r)
+```
+
+- (c)
+- (tm)
+- (r)
+
+## Strikethrough
+La extension `Strikethrough` nos permite tachar un texto dentro de nuestro documento poniendolo entre `~~`
+
+```bash
+   ~~Este texto está tachado~~
+```
+
+~~Este texto está tachado~~
+
+## Dollarmath
+La extension `dollarmath` nos permite expresar funciones matemáticas introduciendolas entre `$`
+
+```bash
+   $x_{hey}=it+is^{math}$
+```
+
+$x_{hey}=it+is^{math}$
+
+## Otras extensiones
+En MyST Parser existen muchos tipos de extensiones de sintaxis que nos permiten hacer nuestros documentos más ricos en contenido, algunas de las extensiones que no hemos mencionado son:
+
+```bash
+myst_enable_extensions = [
+    "amsmath",
+    "attrs_inline",
+    "colon_fence",
+    "deflist",
+    "fieldlist",
+    "html_admonition",
+    "html_image",
+    "linkify",
+    "smartquotes",
+    "substitution",
+    "tasklist",
+]
+
+```

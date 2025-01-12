@@ -1,0 +1,231 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1. Explicación de Comandos Usados en Sphinx &mdash; documentación de Documentacion de T05_DOC_PRUEBAS - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="1. Typography" href="../guia_uso_MyST/001.typography.html" />
+    <link rel="prev" title="10. Estructura final del proyecto" href="../configuracion_inicial/010.estructura-final.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Documentacion de T05_DOC_PRUEBAS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">1. Configuración Inicial del Proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/001.env.html">1. Entorno Virtual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/002.instalacion_librerias.html">2. Instalación de las Librerías Necesarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/003.creacion_con_sphinx.html">3. Creación inicial del proyecto con Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/004.estructura_inicial.html">4. Explicación de la Estructura inicial del proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/005.confpy_explicacion.html">5. Explicación del archivo “conf.py”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/006.index.html">6. Explicación de index.md</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/007.generacion_automatica.html">7. Generacion automatica de documentacion.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/008.HTML_documentacion.html">8. Generacion de HTML a partir de la Documentacion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/009.generacion_PDF.html">9. Generar PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/010.estructura-final.html">10. Estructura final del proyecto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2. Comandos usados en el proyecto</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Explicación de Comandos Usados en Sphinx</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#crear-un-entorno-virtual">1.1. Crear un Entorno Virtual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#activar-el-entorno-virtual">1.2. Activar el entorno Virtual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comandos-para-las-dependencias-de-sphinx">1.3. Comandos para las Dependencias de Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inicializar-un-proyecto-sphinx">1.4. Inicializar un Proyecto Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generar-documentacion-automatica-desde-el-codigo">1.5. Generar Documentacion Automatica desde el Codigo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generar-la-documentacion-en-html">1.6. Generar la Documentacion en HTML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generar-la-documentacion-en-pdf">1.7. Generar la Documentacion en PDF</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#generar-documentacion-de-manera-automatica">1.8. Generar documentacion de manera automatica</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">3. Guía de uso MyST-Parser</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/001.typography.html">1. Typography</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/002.admonitions.html">2. Admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/003.prueba_imagen.html">3. Insertar imagen en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/004.prueba_tabla.html">4. Insertar tablas en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/005.prueba_codigo_y_api.html">5. Insertar codigo fuente y APIs en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/006.referencias_cruzadas.html">6. Referencias cruzadas con MyST Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/007.organizar_contenido.html">7. Organizar contenido en Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/008.extensiones_de_sintaxis.html">8. Extensiones de Sintaxis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guia_uso_MyST/009.roles_y_directivas.html">9. Roles y Directivas</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentacion de T05_DOC_PRUEBAS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>Explicación de Comandos Usados en Sphinx</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/comandos/001.comandos_utilizados.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="explicacion-de-comandos-usados-en-sphinx">
+<h1><span class="section-number">1. </span>Explicación de Comandos Usados en Sphinx<a class="headerlink" href="#explicacion-de-comandos-usados-en-sphinx" title="Link to this heading"></a></h1>
+<section id="crear-un-entorno-virtual">
+<h2><span class="section-number">1.1. </span>Crear un Entorno Virtual<a class="headerlink" href="#crear-un-entorno-virtual" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>env
+</pre></div>
+</div>
+<p>Este comando crea un entorno virtual llamado env. Un entorno virtual es un espacio aislado para instalar las dependencias de Python, evitando conflictos con otras versiones de librerías o proyectos</p>
+</section>
+<section id="activar-el-entorno-virtual">
+<h2><span class="section-number">1.2. </span>Activar el entorno Virtual<a class="headerlink" href="#activar-el-entorno-virtual" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.<span class="se">\e</span>nv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+</pre></div>
+</div>
+<p>Este comando activa el entorno virtual creado previamente. Una vez activado, cualquier paquete que instales usando pip se instalará solo dentro de ese entorno.</p>
+</section>
+<section id="comandos-para-las-dependencias-de-sphinx">
+<h2><span class="section-number">1.3. </span>Comandos para las Dependencias de Sphinx<a class="headerlink" href="#comandos-para-las-dependencias-de-sphinx" title="Link to this heading"></a></h2>
+<p>Usando el archivo <strong>requirements.txt</strong>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</pre></div>
+</div>
+<p>Manualmente:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-U<span class="w"> </span>sphinx
+
+pip<span class="w"> </span>install<span class="w"> </span>sphinx_rtd_theme
+
+pip<span class="w"> </span>install<span class="w"> </span>myst-parser
+
+pip<span class="w"> </span>install<span class="w"> </span>sphinxcontrib-napoleon<span class="w"> </span>
+
+pip<span class="w"> </span>install<span class="w"> </span>sphinx-autobuild
+
+pip<span class="w"> </span>install<span class="w"> </span>sphinx_markdown_builder
+
+pip<span class="w"> </span>install<span class="w"> </span>sphinx-autodoc-typehints
+</pre></div>
+</div>
+<ol class="arabic simple">
+<li><p><strong>sphinx</strong>: La herramienta principal para generar documentación.</p></li>
+<li><p><strong>sphinx-rtd-theme</strong>: Un tema profesional para la documentación, utilizado comúnmente en proyectos de documentación en línea.</p></li>
+<li><p><strong>sphinx-autobuild</strong>: Permite previsualizar la documentación generada de manera automática a medida que realizas cambios.</p></li>
+<li><p><strong>sphinxcontrib-napoleon</strong>: Habilita el soporte para los formatos de docstring de Google y NumPy.</p></li>
+<li><p><strong>myst-parser</strong>: Permite usar archivos Markdown (.md) en lugar de reStructuredText (.rst) en Sphinx.</p></li>
+<li><p><strong>sphinx_markdown_builder</strong>: Permite a Sphinx generar salida en formato Markdown para documentación</p></li>
+<li><p><strong>sphinx-autodoc-typehints</strong>: Se usa para mejorar cómo se muestran las anotaciones en los docstrings</p></li>
+</ol>
+</section>
+<section id="inicializar-un-proyecto-sphinx">
+<h2><span class="section-number">1.4. </span>Inicializar un Proyecto Sphinx<a class="headerlink" href="#inicializar-un-proyecto-sphinx" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-quickstart
+</pre></div>
+</div>
+<p>Este comando inicializa un proyecto de documentación Sphinx, generando una estructura básica de archivos y directorios que contiene:</p>
+<ol class="arabic simple">
+<li><p><strong>conf.py</strong>: Archivo de configuración.</p></li>
+<li><p><strong>index.rst o index.md</strong>: El archivo principal de documentación.</p></li>
+</ol>
+<p>Al ejecutarlo, el comando te hará algunas preguntas para configurar el proyecto (por ejemplo, el nombre del proyecto, la versión, etc.).</p>
+</section>
+<section id="generar-documentacion-automatica-desde-el-codigo">
+<h2><span class="section-number">1.5. </span>Generar Documentacion Automatica desde el Codigo<a class="headerlink" href="#generar-documentacion-automatica-desde-el-codigo" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-apidoc<span class="w"> </span>-o<span class="w"> </span>source/
+</pre></div>
+</div>
+<p>Este comando genera automáticamente la documentación de los módulos Python presentes en el directorio actual. El resultado se guarda en el directorio source/. Los archivos generados incluyen la documentación en formato reStructuredText (.rst) para cada archivo Python.</p>
+</section>
+<section id="generar-la-documentacion-en-html">
+<h2><span class="section-number">1.6. </span>Generar la Documentacion en HTML<a class="headerlink" href="#generar-la-documentacion-en-html" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>.<span class="se">\d</span>ocs<span class="se">\m</span>ake.bat<span class="w"> </span>html<span class="w"> </span>
+</pre></div>
+</div>
+<p>Este comando construye la documentación en formato HTML. Los archivos generados se encuentran en el directorio build/html/. Puedes abrir index.html en tu navegador para ver el resultado.</p>
+</section>
+<section id="generar-la-documentacion-en-pdf">
+<h2><span class="section-number">1.7. </span>Generar la Documentacion en PDF<a class="headerlink" href="#generar-la-documentacion-en-pdf" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-build<span class="w"> </span>-b<span class="w"> </span>pdf<span class="w"> </span>docs/source<span class="w"> </span>docs/build/pdf
+</pre></div>
+</div>
+<p>El comando «sphinx-build -b pdf» genera la documentación en formato PDF a partir de la documentación fuente.</p>
+</section>
+<section id="generar-documentacion-de-manera-automatica">
+<h2><span class="section-number">1.8. </span>Generar documentacion de manera automatica<a class="headerlink" href="#generar-documentacion-de-manera-automatica" title="Link to this heading"></a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sphinx-build<span class="w"> </span>-b<span class="w"> </span>markdown<span class="w"> </span>source/<span class="w"> </span>build/
+</pre></div>
+</div>
+<p>Este comando hace que genere el .md . Será generado gracias al sphinx-apidoc debido a la opcion -b, que hará que lo genere como .md en vez de .srt.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="../configuracion_inicial/010.estructura-final.html" class="btn btn-neutral float-left" title="10. Estructura final del proyecto" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="../guia_uso_MyST/001.typography.html" class="btn btn-neutral float-right" title="1. Typography" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Grupo 03.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

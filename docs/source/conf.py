@@ -28,11 +28,14 @@ sys.path.insert(0, os.path.abspath('../'))
 
 # Lista de extensiones activadas en Sphinx
 extensions = [
-    'sphinx.ext.autodoc',  # Genera documentación automáticamente desde docstrings
-    'sphinx.ext.napoleon',  # Interpreta docstrings en formatos Google y NumPy
-    'sphinx.ext.viewcode',  # Agrega enlaces al código fuente desde la documentación
-    'sphinx_rtd_theme',  # Tema visual basado en Read the Docs
-    'myst_parser',  # Habilita soporte para archivos Markdown
+    "sphinx.ext.autodoc",  # Genera documentación automáticamente desde docstrings
+    "sphinx.ext.napoleon",  # Interpreta docstrings en formatos Google y NumPy
+    "sphinx.ext.viewcode",  # Agrega enlaces al código fuente desde la documentación
+    "sphinx_rtd_theme",  # Tema visual basado en Read the Docs
+    "myst_parser",  # Habilita soporte para archivos Markdown
+    "rst2pdf.pdfbuilder",
+    "sphinx_markdown_builder", #Permite a Sphinx generar salida en formato Markdown para documentación
+    "sphinx_autodoc_typehints" #se usa para mejorar cómo se muestran las anotaciones en los docstrings
 ]
 
 # Ruta de las plantillas personalizadas
@@ -58,3 +61,13 @@ html_theme = 'sphinx_rtd_theme'
 
 # Directorio para recursos estáticos personalizados (CSS, JS, imágenes, etc.)
 html_static_path = ['_static']
+
+# Extensiones de myST
+myst_enable_extensions = ["colon_fence", #Permite el uso de cercas de dos puntos (:::) para crear bloques personalizados como admoniciones, bloques estilizados o contenido enriquecido.
+                          "replacements", #Habilita el uso de variables o sustituciones en Markdown para reutilizar texto fácilmente.
+                          "strikethrough", #Permite usar sintaxis de tachado en Markdown.
+                          "dollarmath" #Habilita la sintaxis matemática con delimitadores de dólar. Útil para escribir expresiones matemáticas
+                          ] 
+
+# Define el nivel de encabezados que tendrán anclas automáticas generadas.
+myst_heading_anchors = 2

@@ -1,0 +1,76 @@
+
+# Generacion automatica de documentacion.
+
+Para generar la documentacion de un codigo de manera automática a través de sphinx será necesario los siguientes requisitos:
+
+## Requisitos
+
+En el archivo de configuración es necesario que en el apartado de **extensions** de nuestro archivo 'conf.py' se encuentren las siguientes extensiones (Pueden haber más, pero las siguientes son las obligatorias):
+
+```bash
+
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'myst_parser'
+]
+
+```
+
+También será necesario instalar **sphinx-markdown-builder**. Este lo instalaremos mediante el siguiente comando:
+
+```bash
+
+pip install sphinx-markdown-builder
+
+```
+y lo añadiremos a el apartado de las extensiones:
+
+```bash
+
+extensions = [
+    'sphinx.ext.autodoc',
+    'sphinx.ext.napoleon',
+    'myst_parser',
+    'sphinx_markdown_builder'
+]
+
+
+```
+
+## Como generar la documentacion
+
+Para generar la documentación es necesario ejecutar el comando **sphinx-apidoc** con el que generaremos nuestra documentación. Ahora expondremos un ejemplo de como se utiliza.
+
+```bash
+
+sphinx-apidoc -o docs ./ruta_del_archivo_donde_se_encuentra_source
+
+```
+
+Después de ejecutar este comando deberemos ejecutar el siguiente comando situandonos en el fichero /docs para generar los archivos con la extension .md
+
+```bash
+
+sphinx-build -b markdown source/ build/
+
+```
+
+## Archivos Generados
+
+Despues de ejecutar los comandos anteriores para construir la documentacion se generaran archivos Markdown que incluiran:
+
+- index.md: Archivo principal que enlaza con el resto de los documentos 
+
+- "nombre del archivo".md: Esta es una documentacion especifica del codigo .py proporcionado el cual incluye descripciones de las funciones, clases y sus atributos.
+
+
+## Cambiar el formato de salida 
+
+Se puede cambiar el formato de salida añadiendo esta linea al archivo de configuracion 
+
+```bash
+myst_enable_extensions = ["colon_fence"]
+
+```
+

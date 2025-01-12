@@ -1,0 +1,20 @@
+# Generacion de HTML a partir de la Documentacion
+
+Para generar la documentación en formato HTML a partir de los archivos **.rst** generados por **sphinx-apidoc** hay que hacer lo siguiente pero primero una pequeña explicacion de que archivos se usuaran y que Script se va a ejecutar.
+
+## Archivos que se usaran para generar la documentacion
+
+Sphinx tomará los archivos .rst generados anteriormente, que contienen la documentación de tu código Python, y los procesará para generar la salida en HTML. Estos archivos se encuentran en el directorio docs/source/.
+
+## Que script se ejecutara
+
+Para generar el archivo HTML a partir de los archivos **.rst** se utiliza el siguiente comando
+
+```bash
+sphinx-build -b html docs/source/ docs/build/
+
+```
+## Resultado generado
+
+Después de ejecutar el comando anterior, Sphinx generará los archivos HTML en el directorio especificado (docs/build/). Estos archivos incluirán la documentación de el código, y podremos visualizarlos en un navegador web.
+

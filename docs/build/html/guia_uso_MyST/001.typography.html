@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1. Typography &mdash; documentación de Documentacion de T05_DOC_PRUEBAS - 1</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=92345faf"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/translations.js?v=f85f4cfb"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="2. Admonitions" href="002.admonitions.html" />
+    <link rel="prev" title="1. Explicación de Comandos Usados en Sphinx" href="../comandos/001.comandos_utilizados.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Documentacion de T05_DOC_PRUEBAS
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">1. Configuración Inicial del Proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/001.env.html">1. Entorno Virtual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/002.instalacion_librerias.html">2. Instalación de las Librerías Necesarias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/003.creacion_con_sphinx.html">3. Creación inicial del proyecto con Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/004.estructura_inicial.html">4. Explicación de la Estructura inicial del proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/005.confpy_explicacion.html">5. Explicación del archivo “conf.py”</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/006.index.html">6. Explicación de index.md</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/007.generacion_automatica.html">7. Generacion automatica de documentacion.</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/008.HTML_documentacion.html">8. Generacion de HTML a partir de la Documentacion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/009.generacion_PDF.html">9. Generar PDF</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../configuracion_inicial/010.estructura-final.html">10. Estructura final del proyecto</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">2. Comandos usados en el proyecto</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../comandos/001.comandos_utilizados.html">1. Explicación de Comandos Usados en Sphinx</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">3. Guía de uso MyST-Parser</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Typography</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#que-es-typography">1.1. Que es Typography</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formateo-de-texto">1.2. Formateo de texto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comillas-tipograficas">1.3. Comillas tipograficas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#guiones-y-rayas">1.4. Guiones y rayas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#control-de-espacios-o-guionado">1.5. Control de Espacios o Guionado</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#espacios-inseparables">1.5.1. Espacios inseparables</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="002.admonitions.html">2. Admonitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="003.prueba_imagen.html">3. Insertar imagen en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="004.prueba_tabla.html">4. Insertar tablas en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="005.prueba_codigo_y_api.html">5. Insertar codigo fuente y APIs en sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="006.referencias_cruzadas.html">6. Referencias cruzadas con MyST Parser</a></li>
+<li class="toctree-l1"><a class="reference internal" href="007.organizar_contenido.html">7. Organizar contenido en Sphinx</a></li>
+<li class="toctree-l1"><a class="reference internal" href="008.extensiones_de_sintaxis.html">8. Extensiones de Sintaxis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="009.roles_y_directivas.html">9. Roles y Directivas</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Documentacion de T05_DOC_PRUEBAS</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active"><span class="section-number">1. </span>Typography</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/guia_uso_MyST/001.typography.md.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section class="tex2jax_ignore mathjax_ignore" id="typography">
+<h1><span class="section-number">1. </span>Typography<a class="headerlink" href="#typography" title="Link to this heading"></a></h1>
+<section id="que-es-typography">
+<h2><span class="section-number">1.1. </span>Que es Typography<a class="headerlink" href="#que-es-typography" title="Link to this heading"></a></h2>
+<p>“Typography” es una funcion de myST que nos permite controlar los aspectos tipográficos del texto. Su principal uso es generar documentos profesionales bien esctructurados.</p>
+<p>Ahora pasaremos a explicar como usarlo y las funciones basicas.</p>
+</section>
+<section id="formateo-de-texto">
+<h2><span class="section-number">1.2. </span>Formateo de texto<a class="headerlink" href="#formateo-de-texto" title="Link to this heading"></a></h2>
+<p>Para remarcar una palabra en negrita la rodearemos con con dos *</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>**Negrita**
+</pre></div>
+</div>
+<p><strong>Salida:</strong>
+<strong>Negrita</strong></p>
+<p>Para remarcar una palabra en cursiva la rodearemos con un solo *</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>*Cursiva*
+</pre></div>
+</div>
+<p><strong>Salida</strong>
+<em>Cursiva</em></p>
+</section>
+<section id="comillas-tipograficas">
+<h2><span class="section-number">1.3. </span>Comillas tipograficas<a class="headerlink" href="#comillas-tipograficas" title="Link to this heading"></a></h2>
+<p>MyST-Parser convierte automáticamente comillas rectas en comillas tipográficas:</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="s2">&quot;Comillas Rectas&quot;</span>
+</pre></div>
+</div>
+<p><strong>Salida</strong>
+«Comillas rectas transformadas»</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w"> </span><span class="s1">&#39;Comillas simples&#39;</span>
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<p>“Comillas simples transformadas”</p>
+<p>Este comportamiento puede ser desactivado desde el archivo de configuracion de Sphinx añadiendo la siguiente linea</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">myst_enable_extensions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span>
+<span class="w">    </span><span class="s2">&quot;smartquotes&quot;</span>,
+<span class="o">]</span>
+</pre></div>
+</div>
+</section>
+<section id="guiones-y-rayas">
+<h2><span class="section-number">1.4. </span>Guiones y rayas<a class="headerlink" href="#guiones-y-rayas" title="Link to this heading"></a></h2>
+<p>MyST parser soporta</p>
+<ul class="simple">
+<li><p>→ solo un guión se transforma en punto.</p></li>
+</ul>
+<p>– → dos guiones seran un guión largo o mediano.</p>
+<p>— → tres guiones seran un guión largo.</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>El<span class="w"> </span>intervalo<span class="w"> </span>de<span class="w"> </span>tiempo<span class="w"> </span>es<span class="w"> </span>de<span class="w"> </span><span class="m">2</span>--4<span class="w"> </span>días<span class="w"> </span>---<span class="w"> </span>esto<span class="w"> </span>es<span class="w"> </span>importante.
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<p>El intervalo de tiempo es de 2–4 días — esto es importante.</p>
+</section>
+<section id="control-de-espacios-o-guionado">
+<h2><span class="section-number">1.5. </span>Control de Espacios o Guionado<a class="headerlink" href="#control-de-espacios-o-guionado" title="Link to this heading"></a></h2>
+<p>MyST parser también tiene funciones para controlar el espacio o los Guionados.</p>
+<section id="espacios-inseparables">
+<h3><span class="section-number">1.5.1. </span>Espacios inseparables<a class="headerlink" href="#espacios-inseparables" title="Link to this heading"></a></h3>
+<p>Usaremos \ para generar un espacio Inseparable</p>
+<p><strong>Ejemplo</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>Esto<span class="w"> </span>es<span class="w"> </span>un<span class="w"> </span>espacio<span class="w"> </span>inseparable<span class="se">\!</span>
+</pre></div>
+</div>
+<p><strong>Salida</strong></p>
+<p>Esto es un espacio inseparable!</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="../comandos/001.comandos_utilizados.html" class="btn btn-neutral float-left" title="1. Explicación de Comandos Usados en Sphinx" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="002.admonitions.html" class="btn btn-neutral float-right" title="2. Admonitions" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2025, Grupo 03.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

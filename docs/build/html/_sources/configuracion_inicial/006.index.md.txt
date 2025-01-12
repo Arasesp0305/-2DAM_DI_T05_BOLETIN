@@ -1,0 +1,108 @@
+# Explicación de index.md 
+
+## ¿Qué es?
+
+El archivo **index.md** (o index.rst, dependiendo del formato que uses) es el archivo principal de configuración de contenido de un proyecto Sphinx. Actúa como el punto de entrada para la generación de la documentación y define la estructura básica del proyecto, indicando qué archivos y secciones incluir, cómo organizarlos y cómo se mostrarán en el índice de navegación.
+
+## Cómo se crean los índices
+
+El índice en forma de árbol (toctree) organiza los contenidos de la documentación en una estructura jerárquica. Cada sección o subsección se puede definir con esta directiva, permitiendo agrupar documentos relacionados.
+
+Las propiedades principales del toctree son:
+**:maxdepth:** Define la profundidad del árbol, es decir, cuántos niveles de subtítulos se incluyen.
+**:caption:** Especifica un título para el árbol.
+**:numbered:** Numera automáticamente las secciones y subsecciones.
+
+Ejemplo sacado de nuestro propio archivo:
+
+```bash
+.. toctree::
+   :maxdepth: 2
+   :caption: 1. Configuración Inicial del Proyecto
+   :numbered:
+
+   configuracion_inicial/001.env
+   configuracion_inicial/002.instalacion_librerias
+   configuracion_inicial/003.creacion_con_sphinx
+   ...
+```
+
+## Tipos de índices adicionales
+
+### Índice alfabético (genindex)
+
+Este es un índice generado automáticamente que organiza los términos o conceptos documentados en orden alfabético.
+
+Cómo se incluye:
+
+Se genera automáticamente si está habilitado en la configuración de Sphinx.
+Para incluirlo manualmente en un archivo, puedes usar la directiva:
+```bash
+.. include:: genindex
+```
+O su equivalente en Markdown con MyST:
+```bash
+```{include} genindex
+```
+
+Uso típico:
+Es útil para búsquedas rápidas de términos específicos.
+Los términos se definen usando la directiva .. index:: en reStructuredText o {index} en MyST.
+
+### Índice temático o búsqueda global (search)
+
+Este índice permite realizar búsquedas en toda la documentación.
+
+Cómo se incluye:
+
+Si está habilitada la extensión de búsqueda (que lo está por defecto en Sphinx), se genera automáticamente.
+Para incluirlo manualmente, puedes usar:
+```bash
+.. include:: search
+```
+O en Markdown:
+```bash
+```{include} search
+```
+
+Uso típico:
+Es accesible a través de la barra de búsqueda en la interfaz HTML generada.
+Muy útil en proyectos con gran cantidad de contenido.
+
+### Índice de referencia cruzada (:ref:)
+
+Este índice no es un índice como tal, pero permite crear enlaces cruzados entre diferentes partes de la documentación.
+
+Cómo se incluye:
+
+Definiendo etiquetas (labels) en las secciones que deseas enlazar.
+En reStructuredText:
+```bash
+.. _mi_seccion:
+
+
+Título de la sección
+====================
+Contenido aquí.
+
+```
+Y para referenciarlo:
+
+```bash
+Ve a la sección :ref:`mi_seccion`.
+```
+En MyST:
+
+```bash
+```{label} mi_seccion
+Título de la sección
+Contenido aquí.
+```
+
+Para referenciarlo:
+```bash
+Ve a la sección {ref}`mi_seccion`.
+```
+
+Uso típico:
+Facilita la navegación interna en la documentación.
