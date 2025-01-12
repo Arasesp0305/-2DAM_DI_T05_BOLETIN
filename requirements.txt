@@ -1,0 +1,7 @@
+sphinx
+sphinx-rtd-theme
+myst-parser
+sphinx.ext.autodoc
+sphinx.ext.napoleon
+sphinx_markdown_builder
+sphinx-autodoc-typehints

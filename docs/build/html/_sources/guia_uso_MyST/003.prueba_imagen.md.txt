@@ -16,3 +16,6 @@ Para insertar una imágen tenemos dos maneras:
 
 ## Imagen insertada
 
+```{image} \\_static\\Test.svg.png
+    :alt: Imagen de prueba
+    :width: 600px

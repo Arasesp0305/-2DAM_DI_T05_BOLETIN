@@ -30,9 +30,6 @@ sphinx-autodoc-typehints
 
 Una vez introducido, guarda el archivo.
 
-Ubicación:
-
-
 
 ### Paso 2: Instalar las librerías
 
@@ -42,10 +39,6 @@ Ahora, ejecuta el siguiente comando para instalar las librerías listadas:
 pip install -r requirements.txt
 ```
 
-Ejemplo:
-
-
-
 ## Pasos para instalar las librerías usando un método manual.
 
 ### Paso 1: Ejecutar el comando directamente
@@ -53,6 +46,3 @@ Ejemplo:
 ```bash
 pip install sphinx sphinx-rtd-theme myst-parser sphinx_markdown_builder sphinx-autodoc-typehints
 ```
-
-Ejemplo:
-

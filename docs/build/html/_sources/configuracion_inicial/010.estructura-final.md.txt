@@ -1,27 +1,6 @@
 # Estructura final del proyecto 
 
-La estructura final de un proyecto sphinx en la cual se haya generado documentacion finalizaria con una ramificacion como la siguiente:
-
-```bash
-project/
-├── docs/                      # Carpeta principal de documentación
-│   ├── build/                 # Salida generada (HTML, Markdown, etc.)
-│   │   ├── index.html         # Archivo principal (si usaste HTML)
-│   │   ├── index.md           # Archivo principal (si usaste Markdown)
-│   │   └── ...                # Otros archivos generados
-│   ├── source/                # Archivos fuente para generar documentación
-│   │   ├── _static/           # Archivos estáticos como CSS o imágenes
-│   │   ├── _templates/        # Plantillas para personalizar el diseño
-│   │   ├── conf.py            # Configuración principal de Sphinx
-│   │   ├── index.rst          # Índice principal de la documentación
-│   │   ├── modules.rst        # Generado automáticamente por sphinx-apidoc
-│   │   └── ...                # Otros archivos `.rst` o `.md` que usas como fuentes
-│   ├── Makefile               # Script para construir documentación (Linux/Mac)
-│   ├── make.bat               # Script para construir documentación (Windows)
-├── example_module.py          # Archivo Python (código fuente del proyecto)
-└── README.md                  # Información general del proyecto (opcional)
-
-```
+Tras usar y ejecutar ciertos comandos a lo largo de la guia y el proyecto, se puede observar un cambio en la estructura del mismo
 
 
 ## Descripcion de los Componentes de la estructura
